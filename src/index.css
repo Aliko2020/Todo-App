@@ -81,3 +81,53 @@ form{
   text-align: start;
   color: #2596be;
 }
+
+.empty-todo {
+  font-size: 18px;
+  color: #2596be; /* Tomato color */
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #2596be;
+  border-radius: 10px;
+  background-color: #f0f8ff; /* AliceBlue background */
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.page-btn {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 2px solid #2596be;
+  background-color: #f0f8ff;
+  color: #2596be;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-btn:hover {
+  background-color:#2596be;
+  color: #fff;
+}
+
+.page-btn.active {
+  background-color: #2596be;
+  color: #fff;
+}
