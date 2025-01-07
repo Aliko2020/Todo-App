@@ -1,14 +1,5 @@
 export const initialState = {
-    todos: [{
-        id: 1,
-        title: "Learn React For 3 Hours",
-        isCompleted: false
-    },
-    {
-        id: 2,
-        title: "Learn SQL For 3 Hours",
-        isCompleted: false
-    }]
+    todos: []
 };
 
 export const reducer = (state, action) => {
